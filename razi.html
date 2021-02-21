@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Raza HTML</title>
+<link rel="stylesheet" href="./bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<style>
+body{
+	background:linear-gradient(-135deg,#c850c0,#4158d0)
+}
+.login-page{
+    background:linear-gradient(-135deg,#60a3c2,#60dab1);
+    margin: 20%;
+    padding: 50px;
+}
+</style>
+<body>
+<div class="login-page">
+    <h1 style="color:#cff6bd">This is a Heading</h1>
+    <p>This is a Bnsdasdas.</p>
+    <input type="text" id="email" name="email">
+    <input type="password" id="pass" name="password">
+    <button onclick="onclickBtn()" >Click Me</button>
+</div>
+
+</body>
+<script>
+	function onclickBtn(){
+        let email = document.getElementById("email");
+        let em = $("#email").val();
+        console.log(em)
+        alert(email.value)
+    }
+    
+</script>
+</html>
